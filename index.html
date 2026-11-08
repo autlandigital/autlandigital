@@ -369,7 +369,7 @@ document.getElementById('plus').onclick=function(){set(n+1)};
 document.getElementById('minus').onclick=function(){set(n-1)};
 document.getElementById('send').onclick=function(){
   var fam=document.getElementById('fam').value.trim();
-  var quien=fam?('la '+fam):'mi familia';
+  var quien=fam?(''+fam):'mi familia';
   var cant=n===1?'1 persona':n+' personas';
   var msg='¡Hola, Jacqueline! 🎀 Con mucha alegría confirmamos que la familia '+quien+' asistirá a tus XV años. Asistiremos '+cant+'. ¡Gracias por invitarnos! 💖';
   window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg),'_blank');
